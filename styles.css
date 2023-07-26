@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  /* border: 1px solid red; */
+  height: 80px;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 130px;
+}
+.header-navbar{
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.header-link{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: all .3s ease;
+}
+.header-link:hover{
+  color: #52904C;
+}
+.login-button{
+  background-color: #52904C;
+  border: none;
+  color: white;
+  font-weight: 700;
+  width: 150px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.login-text{
+  font-size: 12px;
+}
+.login-logo{
+  font-size: 20px;
+  /* width: 30px; */
+}
+.index-content__container{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: flex-end;
+  margin-top: 35px;
+  gap: 20px;
+}
+.index-image{
+  width: 40%;
+  position: relative;
+  border-radius: 50px 0 50px 50px;
+  background-color: #52E879;
+  height: 450px;
+}
+.index-content{
+  width: 47%;
+  position: relative;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.index-content__subtext{
+  font-weight: 400;
+  font-size: 30px;
+}
+.index-content__title{
+  font-size: 70px;
+  line-height: 75px;
+  border-bottom: 7px solid #52E879;
+  width: 430px;
+  margin-bottom: 20px;
+}
+.index-content__title span{
+  color: #52904C;
+}
+.index-content__text{
+  font-size: 14px;
+  color: gray;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.index-image__image{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 280px;
+}
+.index-download{
+  display: flex;
+  gap: 20px;
+
+  /* width: 300px; */
+}
+.index-download img{
+  width: 170px;
+  cursor: pointer;
+}
+.index-social-media{
+  position: absolute;
+  padding: 10px 0 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 45px;
+  background-color: #52904C;
+  top: 40vh;
+  height: 170px;
+}
+.index-social-media i{
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.header-logo{
+  width: 150px;
+}
+.hamburguer-menu{
+  width: 40px;
+  display: none;
+}
+@media (max-width: 870px){
+  .header{
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  .header-link{
+    display: none;
+  }
+  .login-button{
+    display: none;
+  }
+  .header-logo{
+    width: 250px;
+  }
+  .index-content__container{
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  .index-content__subtext{
+    font-size: 20px;
+  }
+  .index-content__title{
+    font-size: 45px;
+    line-height: 50px;
+    border-bottom: 7px solid #52E879;
+    width: 280px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+  }
+  .index-content__text{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .index-image{
+    width: 95%;
+    padding: 30px 0;
+    /* border: 1px solid red; */
+    border-radius: 30px;
+    background-color: #52E879;
+    height: 360px;
+  }
+  .index-content{
+    width: 100%;
+    padding: 40px;
+    padding-top: 0;
+    /* border: 1px solid red; */
+  }
+  .index-image__image{
+    width: 250px;
+  }
+  .index-download{
+    position: absolute;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    top: 800px;
+    margin-bottom: 25px;
+  
+    /* width: 300px; */
+  }
+  .index-download img{
+    width: 130px;
+    cursor: pointer;
+  }
+  .hamburguer-menu{
+    display: block;
+  }
+  .index-social-media{
+    top: 595px;
+    height: 170px;
+  }
+}
