@@ -31,6 +31,10 @@
   align-items: center;
   gap: 45px;
 }
+.link-logo{
+  display: flex;
+  cursor: pointer;
+}
 .header-link{
   text-decoration: none;
   color: black;
@@ -66,8 +70,10 @@
   min-height: calc(100vh - 80px);
   /* border: 1px solid red; */
   justify-content: flex-end;
-  margin-top: 120px;
+  padding-top:90px;
+  /* margin-top: 30px; */
   gap: 20px;
+  align-items: center;
   /* margin-bottom: 20px; */
 }
 .index-image{
@@ -154,7 +160,7 @@
 /* hasta aquí hice media queris */
 
 .article__container{
-  padding-top: 80px;
+  padding-top: 100px;
   /* margin-top: 80px; */
   /* border: 1px solid red; */
   display: flex;
@@ -193,12 +199,16 @@
   justify-content: center;
 }
 .proyecto-img, .ventajas-img{
-  width: 40%;
+  min-width: 400px;
+  max-width: 700px;
+  object-fit: contain;
   /* border: 1px solid red; */
 
 }
 .proyecto-texto__container,.ventajas-texto__container{
+  padding-top: 100px;
   padding-left: 30px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -206,14 +216,14 @@
   /* border: 1px solid red; */
 }
 .proyecto-texto-titulo,.ventajas-texto-titulo{
-  font-size: 35px;
+  font-size: 40px;
   line-height: 40px;
   border-bottom: 5px solid #52904C;
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
 .proyecto-texto-p,.ventajas-texto-p{
-  font-size: 14px;
+  font-size: 17px;
   text-align: right;
 }
 .ventajas-titulo__container{
@@ -238,21 +248,22 @@
 }
 .ventajas__content{
   /* border: 1px solid blue; */
+  display: flex;
   justify-content: space-between;
   color: #fff;
   background-color: #52904C;
   width: 100%;
-  padding-top: 105px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   padding-left: 120px;
   overflow: hidden;
 }
 .ventajas-texto__container{
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 30px;
   gap: 35px;
-  width: 40%;
+  width: 45%;
   align-content: center;
 }
 .ventajas-text__article{
@@ -273,15 +284,16 @@
 }
 .ventajas-image__container{
   position: relative;
-  right: -150px;
+  /* right: -150px; */
   top: 120px;
-  width: 790px;
+  min-width: 790px;
   height: 790px;
   /* border: 1px solid red; */
   background-color: #fff;
   border-radius: 50%;
 }
 .ventajas-list-item{
+  font-size: 15px;
   font-weight: 100;
 }
 .ventajas-img{
@@ -291,7 +303,8 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 600px;
+  max-width: 900px;
+  min-width: 100px;
   /* border: 1px solid red; */
   object-fit: contain;
   height: fit-content;
@@ -462,5 +475,91 @@
   .index-social-media{
     top: 595px;
     height: 170px;
+  }
+}
+@media(min-width: 1600px){
+  .header{
+    height: 100px;
+    padding-left: 200px;
+  }
+  .header-link{
+    font-size: 20px;
+  }
+  .header-logo{
+    width: 190px;
+  }
+  .login-button{
+    width: 190px;
+    height: 50px;
+    gap: 15px;
+  }
+  .login-text{
+    font-size: 16px;
+  }
+  .login-logo{
+    font-size: 25px;
+  }
+  .index-image{
+    height: 500px;
+  }
+  .index-content__subtext{
+    font-weight: 400;
+    font-size: 35px;
+  }
+  .index-content__title{
+    font-size: 90px;
+    line-height: 90px;
+    width: 530px;
+  }
+  .index-content__text{
+    font-size: 17px;
+    width: 700px;
+  }
+  .index-image__image{
+    width: 330px;
+  }
+  .index-download img{
+    width: 220px;
+  }
+  .index-social-media{
+    padding: 10px 0 10px 0;
+    width: 60px;
+    height: 200px;
+  }
+  .index-social-media i{
+    font-size: 22px;
+  }
+  .footer__container{
+    height: 400px;
+  }
+  .footer-app-button{
+    width: 190px;
+  }
+  .footer-social-media i{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
+  .footer-title, .footer-contacto-title{
+    font-size: 32px;
+  }
+  .footer-contacto-text{
+    font-size: 12px;
+  }
+  .footer-contacto-inputs__container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+  }
+  .footer-contacto-input{
+    height: 40px;
+    font-size: 18px;
+    width: 350px;
+    padding-left: 20px;
+  }
+  .footer-contacto__button{
+    font-size: 20px;
   }
 }
