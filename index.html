@@ -13,13 +13,45 @@
 <body>
     <container class="main-container">
 
+        <div class="tecnologia-modal__container" id="modal1">
+            <div class="tecnologia-modal__card">
+                <i class="fa-solid fa-xmark" id="modalClose1"></i>
+                <p class="tecnologia-modal-text">Gracias a la tecnología de Body Tracking, nuestros usuarios pueden tener la certeza de que cada movimiento es monitoreado con precisión. Cada ángulo, cada gesto, es capturado y analizado en tiempo real, lo que garantiza que los ejercicios se realicen de manera precisa y segura.</p>
+            </div>
+        </div>
+        <div class="tecnologia-modal__container" id="modal2">
+            <div class="tecnologia-modal__card">
+                <i class="fa-solid fa-xmark" id="modalClose2"></i>
+                <p class="tecnologia-modal-text">Nuestra aplicación ofrece retroalimentación en tiempo real mientras se realizan los ejercicios. Si un movimiento no se ejecuta correctamente, el sistema lo detecta al instante y proporciona orientación para corregirlo. Esto permite a los cuidadores y a las personas con discapacidades ajustar su técnica sobre la marcha y evitar posibles lesiones.</p>
+            </div>
+        </div>
+        <div class="tecnologia-modal__container" id="modal3">
+            <div class="tecnologia-modal__card">
+                <i class="fa-solid fa-xmark" id="modalClose3"></i>
+                <p class="tecnologia-modal-text">Cada persona es única, y las necesidades de ejercicio también lo son. Gracias al Body Tracking, nuestra aplicación se adapta de manera dinámica a las capacidades individuales de cada usuario. Esto garantiza que los ejercicios sean desafiantes pero seguros, ya que la tecnología ajusta automáticamente la dificultad según el progreso y las limitaciones de cada persona.</p>
+            </div>
+        </div>
+        <div class="tecnologia-modal__container" id="modal4">
+            <div class="tecnologia-modal__card">
+                <i class="fa-solid fa-xmark" id="modalClose4"></i>
+                <p class="tecnologia-modal-text">La visibilidad en tiempo real de los movimientos y la mejora en la técnica de ejercicio pueden ser increíblemente motivadores. Nuestra tecnología de Body Tracking permite a los usuarios visualizar sus propios avances, lo que a su vez fomenta una mayor participación y compromiso con los ejercicios a lo largo del tiempo.</p>
+            </div>
+        </div>
+        <div class="tecnologia-modal__container" id="modal5">
+            <div class="tecnologia-modal__card">
+                <i class="fa-solid fa-xmark" id="modalClose5"></i>
+                <p class="tecnologia-modal-text">Para aquellos que cuidan a personas con discapacidades, la supervisión constante puede ser un desafío logístico. La tecnología de Body Tracking brinda la tranquilidad de que los ejercicios se están realizando correctamente incluso en ausencia del cuidador físico. Esto libera tiempo y alivia la preocupación, permitiendo una atención más centrada en otras áreas importantes.</p>
+            </div>
+        </div>
+
         <header class="header">
             <nav class="header-navbar">
                 <a href="#index" class="link-logo">
                   <img src="images/logo.png" alt="CuidadoCuidador" class="header-logo">
                 </a>
                 <a href="#proyecto" class="header-link">Sobre el proyecto</a>
-                <a href="#ventajas" class="header-link">Características de la app</a>
+                <a href="#ventajas" class="header-link">Ventajas de la app</a>
+                <a href="#tecnologia" class="header-link">Tecnologia</a>
                 <a href="#contacto" class="header-link">Contacto</a>
             </nav>
             <button class="login-button">
@@ -34,7 +66,7 @@
             <article class="index-content">
                 <p class="index-content__subtext">Próximamente</p>
                 <h1 class="index-content__title">Una app <br>ideal para<br> <span>cuidadores</span></h1>
-                <p class="index-content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, doloribus. Facilis minus quas sequi eligendi similique, neque nihil nobis placeat numquam. Debitis ratione eos iste nostrum ipsum sit modi neque!</p>
+                <p class="index-content__text">Funciona como un asistente  para los cuidadores, permitiendoles disminuir los riesgos de lesión durante su labor.</p>
 
                 <article class="index-download">
                     <img src="images/APPSTORE.png" alt="" class="index-download__button">
@@ -131,6 +163,37 @@
             </div>
         </content>
 
+        <content class="article__container" id="tecnologia">
+            <div class="proyecto-titulo__container">
+                <h2 class="proyecto-titulo">Tecnología</h2>
+            </div>
+
+            <div class="proyecto__content">
+                <div class="tecnologia-contenido__container">
+                    <div class="tecnologia-buttontext__container">
+                        <div class="tecnologia-text__container">
+                            <h1 class="tecnologia-title">Body Tracking</h1>
+                            <p class="tecnologia-text">
+                                La tecnología de Body Tracking es la columna vertebral de nuestra aplicación.
+                                Es la que nos permite llevar la prevención de lesiones a un nivel completamente nuevo.
+                            </p>
+                        </div>
+                        <div class="tecnologia-buttons__container">
+                            <p class="tecnologia-button" id="tecnologia1">Presición sin igual</p>
+                            <p class="tecnologia-button" id="tecnologia2">Retroalimentación inmediata</p>
+                            <p class="tecnologia-button" id="tecnologia3">Personalización adaptativa</p>
+                            <p class="tecnologia-button" id="tecnologia4">Motivación mejorada</p>
+                            <p class="tecnologia-button" id="tecnologia5">Supervisión remota</p>
+                        </div>
+                    </div>
+                    <div class="tecnologia-videos__container">
+                        <video loop autoplay src="videos/Home Workout Using Motion Tracking _ Kemtai_1.mp4" class="tecnologia-video"></video>
+                        <video loop autoplay src="videos/Home Workout Using Motion Tracking _ Kemtai_2.mp4" class="tecnologia-video"></video>
+                    </div>
+                </div>
+            </div>
+        </content>
+
         <content class="footer__container">
             <div class="apps-social-media__container">
                 <p class="footer-title">Descarga aquí</p>
@@ -161,6 +224,7 @@
 
         
     </container>
+    <script src="script.js"></script>
     
 </body>
 </html>
