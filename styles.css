@@ -123,6 +123,7 @@
 .index-download{
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 
   /* width: 300px; */
 }
@@ -234,6 +235,7 @@
 }
 .ventajas-titulo__container h2{
   /* border: 1px solid red; */
+  z-index: 10;
   display: flex;
   justify-content: flex-end;
   padding-left: 0;
@@ -248,6 +250,7 @@
   border-bottom-right-radius: 15px;
 }
 .ventajas__content{
+  position: relative;
   /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
@@ -264,8 +267,10 @@
   flex-direction: column;
   padding-left: 30px;
   gap: 35px;
-  width: 45%;
+  max-width: 45%;
+  min-width: 100px;
   align-content: center;
+  margin-right: 30px;
 }
 .ventajas-text__article{
   display: flex;
@@ -283,29 +288,20 @@
   gap: 15px;
   font-size: 14px;
 }
-.ventajas-image__container{
-  position: relative;
-  /* right: -150px; */
-  top: 120px;
-  min-width: 790px;
-  height: 790px;
-  /* border: 1px solid red; */
-  background-color: #fff;
-  border-radius: 50%;
-}
 .ventajas-list-item{
   font-size: 15px;
   font-weight: 100;
 }
 .ventajas-img{
   position: absolute;
-  top: 0;
-  right: 150px;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  top: 100px;
+  right: -240px;
+  display: flex;
+  /* bottom: 0; */
+  /* left: 0; */
+  /* margin: auto; */
   max-width: 900px;
-  min-width: 100px;
+  min-width: 700px;
   /* border: 1px solid red; */
   object-fit: contain;
   height: fit-content;
@@ -522,6 +518,10 @@
   .index-content__container{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
     /* border: 1px solid red; */
   }
   .index-content__subtext{
@@ -539,6 +539,7 @@
   .index-content__text{
     font-size: 12px;
     line-height: 20px;
+    width: 100%;
   }
   .index-image{
     width: 95%;
@@ -549,23 +550,26 @@
     height: 360px;
   }
   .index-content{
+    /* align-items: center; */
+    /* margin: auto; */
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     padding-top: 0;
+    margin-bottom: 20px;
     /* border: 1px solid red; */
   }
   .index-image__image{
     width: 250px;
   }
   .index-download{
-    position: absolute;
+    /* position: absolute; */
     /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     /* flex-direction: column; */
     align-items: center;
-    width: 300px;
+    width: 100%;
     gap: 10px;
     top: 800px;
     margin-bottom: 25px;
@@ -573,15 +577,156 @@
     /* width: 300px; */
   }
   .index-download img{
-    width: 130px;
+    width: 110px;
     cursor: pointer;
   }
   .hamburguer-menu{
     display: block;
   }
   .index-social-media{
-    top: 595px;
-    height: 170px;
+    display: none;
+  }
+
+  .article__container{
+    min-height: 100%;
+  }
+  .proyecto-titulo__container, .ventajas-titulo__container{
+    height: 35px;
+    margin-bottom: 30px;
+  }
+  .proyecto-titulo__container h2, .ventajas-titulo__container h2{
+    width: 230px;
+    height: 70px;
+    font-size: 19px;
+  }
+  .proyecto-img, .ventajas-img{
+    display: none;
+  }
+  .proyecto-texto__container,.ventajas-texto__container{
+    padding-top: 35px;
+    padding-left: 0px;
+    min-width: 100%;
+    align-items: center;
+    width: 70%;
+    /* border: 1px solid red; */
+  }
+  .proyecto-texto-titulo,.ventajas-texto-titulo{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .proyecto-texto-p,.ventajas-texto-p{
+    text-align: center;
+    font-size: 12px;
+  }
+  .ventajas-titulo__container{
+    background-color: #fff;
+    /* border: 1px solid red; */
+    margin-bottom: 0;
+  }
+  .ventajas-titulo__container h2{
+    /* border: 1px solid red; */
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0;
+    height: 70px;
+    font-size: 25px;
+  }
+  .ventajas__content{
+    overflow: visible;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .ventajas-text__article{
+    /* border: 1px solid red; */
+    width: 90%;
+  }
+  .ventajas-text__subtitle{
+    font-size: 28px;
+    width: 80%;
+    line-height: 35px;
+  }
+  .ventajas-list-item{
+    font-size: 12px;
+  }
+  .ventajas-img{
+    display: none;
+  }
+  .tecnologia-contenido__container{
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 30px;
+  }
+  .tecnologia-text__container{
+    align-items: center;
+  }
+  .tecnologia-text{
+    text-align: center;
+  }
+  .tecnologia-video{
+    max-width: 300px;
+    min-width: 100px;
+  }
+  .tecnologia-modal__card{
+    min-width: 300px;
+    font-size: 12px;
+    max-width: 400px;
+    padding: 20px;
+  }
+  .showModal{
+    display: flex;
+  }
+  .footer__container{
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer-app-button{
+    width: 95px;
+  }
+  .apps-social-media__container{
+    /* border: 1px solid white; */
+    width: 100%;
+    gap: 5px;
+  }
+  .footer-apps, .footer-social-media{
+    display: flex;
+    gap: 10px;
+  }
+  .footer-social-media i{
+    margin-top: 10px;
+  }
+  .footer-contacto__container{
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+  }
+  .inputs-title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-contacto-text{
+    text-align: center;
+  }
+  .footer-contacto-inputs__container{
+    width: 75%;
+  }
+  .footer-contacto-input{
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer-contacto__button{
+    width: fit-content;
+    background-color: #52904C;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
   }
 }
 @media(min-width: 1600px){
@@ -669,5 +814,15 @@
   .footer-contacto__button{
     font-size: 20px;
   }
+}
 
+/* HEADER Y TEXTOS QUE COLISIONAN */
+@media(max-width: 1095px){
+  .header-link{
+    font-size: 12px;
+  }
+  .ventajas-img{
+    max-width: 780px;
+    min-width: 700px;
+  }
 }
